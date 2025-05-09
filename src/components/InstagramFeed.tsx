@@ -1,40 +1,37 @@
 
-import { Instagram } from "lucide-react";
+import { Instagram, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-// Este componente simula um feed do Instagram
-// Em uma implementação real, você utilizaria a API do Instagram
-// ou uma biblioteca como react-instagram-embed
-
+// Componente de feed do Instagram atualizado com imagens reais
 const InstagramFeed = () => {
   const instagramPosts = [
     {
       id: 1,
-      imageUrl: "https://source.unsplash.com/photo-1513364776144-60967b0f800f",
+      imageUrl: "/lovable-uploads/c332e9ef-9a2e-4e7c-b53c-676c035832a6.png",
       likes: 124,
       comments: 18,
-      caption: "Novos trabalhos em andamento..."
+      caption: "Pensar em lar com mais ímpeto..."
     },
     {
       id: 2,
-      imageUrl: "https://source.unsplash.com/photo-1460661419201-fd4cecdf8a8b",
+      imageUrl: "/lovable-uploads/353fb5d4-1f38-4ec7-9f7e-9cbad3dc612b.png",
       likes: 89,
       comments: 7,
-      caption: "Inspiração nas cores do outono"
+      caption: "É que depois da última vez eu verdadeiramente quis."
     },
     {
       id: 3,
-      imageUrl: "https://source.unsplash.com/photo-1579783901586-d88db74b4fe4",
+      imageUrl: "/lovable-uploads/e1de8556-05dc-4666-bfaa-a5ca87105589.png",
       likes: 156,
       comments: 23,
-      caption: "Momentos de criação"
+      caption: "Personagens que contam histórias..."
     },
     {
       id: 4,
-      imageUrl: "https://source.unsplash.com/photo-1505377059067-e285a7bac49b",
+      imageUrl: "/lovable-uploads/40bed54e-9fcc-4ce5-9eef-b29a215b0869.png",
       likes: 102,
       comments: 12,
-      caption: "Explorando novas técnicas"
+      caption: "De há guerra por tudo que é mais sagrado."
     }
   ];
 

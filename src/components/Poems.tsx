@@ -11,52 +11,39 @@ interface Poem {
 const poems: Poem[] = [
   {
     id: 1,
-    title: "Amanhecer",
-    content: `Cores desvendam o horizonte
-Em silêncio, a espera se desfaz
-O mundo respira novamente
-E a luz faz renascer a paz.
+    title: "Segurança",
+    content: `Se é nos braços ou nas paredes que encontro alguma segurança, isso não me importa. 
+Me importa se tenho você/ se o chão é firme/ se o coração pulsa/ que as infiltracões não tomem conta.
 
-Cada raio toca a terra
-Em um beijo morno e gentil
-Desperto para outro dia
-Onde a esperança se faz mil.`
+Eu quero pensar em lar com mais
+ímpeto do que da ultima vez
+pra não correr o risco da goteira inundar, das rachaduras ramificarem, de você virar estranho.
+
+É que sei: Se dessa vez a fundação for firme, as paredes bem pintadas;
+se eu não deixar de aguar as plantas;
+se dessa vez eu segura com menos força
+há de vingar.`
   },
   {
     id: 2,
-    title: "Entre Palavras",
-    content: `No espaço entre palavras não ditas
-Mora o mais sincero sentimento
-O que os lábios contiveram
-O que o peito guarda com atenção.
-
-Silêncios carregam verdades
-Que vozes não conseguem vestir
-O que não se pronuncia
-Frequentemente grita mais alto.
-
-Entre letras, entre linhas
-Entre os traços da nossa história
-O não dito permanece eterno
-Em um eco contínuo de memória.`
+    title: "Depois da Última Vez",
+    content: `É que depois da ultima vez fiquei disposta. 
+Depois da ultima vez eu verdadeiramente quis.`
   },
   {
     id: 3,
-    title: "Cores da Alma",
-    content: `Pinto minha alma com cores que ninguém vê
-Tons que escapam do espectro visível
-Emoções que transbordam da tela
-E pingam no chão da realidade.
+    title: "Começo",
+    content: `Todos os dias chego na fundação, abro todas as portas e cadeados, 
+abro meu ateliê de chave de senha, abro as janelas, 
+pego um dos desenhos e começo.
 
-Cada pincelada é um suspiro
-Cada textura, um sentimento guardado
-Nas misturas improváveis de pigmentos
-Revela-se a verdade do ser calado.
+Todos os dias abro o coração, 
+me desfaço das travas, 
+assumo que o erro é oportuno, 
+estalo os ombros, respiro fundo e começo.
 
-A arte que flui de minhas mãos
-É confissão que dispensa palavras
-É grito silencioso que ecoa
-Nas paredes brancas do mundo.`
+Esse ano vou lançar um livro
+E a vida só começa.`
   },
 ];
 
