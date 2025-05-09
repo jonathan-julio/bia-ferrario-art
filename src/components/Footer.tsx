@@ -1,4 +1,3 @@
-
 import { Instagram, Mail, Book } from "lucide-react";
 
 const Footer = () => {
@@ -46,11 +45,11 @@ const Footer = () => {
                 @biaferrario
               </a>
               <a 
-                href="mailto:contato@biaferrario.com" 
+                href="mailto:biaferrario@outlook.com" 
                 className="flex items-center text-white/70 hover:text-white transition-colors"
               >
                 <Mail className="h-5 w-5 mr-2" />
-                contato@biaferrario.com
+                biaferrario@outlook.com
               </a>
               <a 
                 href="https://pubhtml5.com/abdfk/jykn/" 

@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, ShoppingCart } from "lucide-react";
+import { toast } from "sonner";
 
 const Hero = () => {
   // Função para rolar suavemente até a seção de livro
@@ -11,6 +12,16 @@ const Hero = () => {
   // Função para rolar suavemente até a galeria
   const scrollToGallery = () => {
     document.getElementById('arte')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  // Função para abrir WhatsApp para compra
+  const handleBuyBook = () => {
+    const phoneNumber = "5584987824228";
+    const message = encodeURIComponent("Oi gostaria de comprar O guia do palhaço ilustrado!!");
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
+    
+    window.open(whatsappLink, "_blank");
+    toast.success("Redirecionando para o WhatsApp...");
   };
 
   return (
@@ -40,6 +51,13 @@ const Hero = () => {
                 onClick={scrollToGallery}
               >
                 Ver Galeria
+              </Button>
+              <Button
+                className="bg-green-600 hover:bg-green-700 text-white"
+                size="lg"
+                onClick={handleBuyBook}
+              >
+                <ShoppingCart className="mr-2 h-4 w-4" /> Comprar Livro
               </Button>
             </div>
           </div>

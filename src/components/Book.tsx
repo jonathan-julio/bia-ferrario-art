@@ -1,6 +1,5 @@
-
 import { Button } from "@/components/ui/button";
-import { BookOpen, ChevronLeft, ChevronRight } from "lucide-react";
+import { BookOpen, ChevronLeft, ChevronRight, ShoppingCart } from "lucide-react";
 import { useState } from "react";
 import { 
   Pagination, 
@@ -13,6 +12,7 @@ import {
 } from "@/components/ui/pagination";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { cn } from "@/lib/utils";
+import { toast } from "sonner";
 
 interface BookPage {
   id: number;
@@ -131,6 +131,15 @@ const Book = () => {
     setCurrentPage(page);
   };
 
+  const handleBuyNow = () => {
+    const phoneNumber = "5584987824228";
+    const message = encodeURIComponent("Oi gostaria de comprar O guia do palhaço ilustrado!!");
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
+    
+    window.open(whatsappLink, "_blank");
+    toast.success("Redirecionando para o WhatsApp...");
+  };
+
   const displayedPages = () => {
     // This logic decides which page numbers to show in pagination
     const pages = [];
@@ -197,6 +206,13 @@ const Book = () => {
                 onClick={() => window.scrollTo({ top: document.getElementById('book-preview')?.offsetTop, behavior: 'smooth' })}
               >
                 Ver Páginas
+              </Button>
+              <Button
+                className="bg-green-600 hover:bg-green-700 text-white"
+                size="lg"
+                onClick={handleBuyNow}
+              >
+                <ShoppingCart className="mr-2 h-4 w-4" /> Comprar Agora
               </Button>
             </div>
           </div>
