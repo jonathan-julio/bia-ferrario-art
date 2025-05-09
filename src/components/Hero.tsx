@@ -31,7 +31,7 @@ const Hero = () => {
                 size="lg"
                 onClick={scrollToBook}
               >
-                Conheça o Livro
+                O Guia do Palhaço Ilustrado
               </Button>
               <Button 
                 variant="outline" 
